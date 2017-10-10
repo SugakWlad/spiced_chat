@@ -1,0 +1,9 @@
+DROP TABLE IF EXISTS teams;
+
+CREATE TABLE teams(
+    id SERIAL PRIMARY KEY,
+    team_name VARCHAR(255) NOT NULL,
+    secret_code VARCHAR NOT NULL,
+    image VARCHAR,
+    team_created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
